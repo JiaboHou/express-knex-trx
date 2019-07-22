@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/index knexTrxErrorHandler failed rollback passes the expected error message to the next middleware 1`] = `"An error occurred while trying to perform a knex trx rollback due to a previous error: test error"`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is a boolean 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is a function without a "rollback" member 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is a number 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is a string 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is an array 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is an object 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is null 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
+
+exports[`src/index knexTrxErrorHandler when trx is not an instance of Knex.Transaction throws an Error when res.locals.trx is undefined 1`] = `[Error: An error occurred while trying to perform a knex trx rollback due to a previous error: ]`;
