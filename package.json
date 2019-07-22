@@ -1,0 +1,16 @@
+{
+  "name": "express-knex-trx",
+  "version": "0.0.1",
+  "description": "Express middleware for Knex transactions",
+  "main": "dist/index.js",
+  "repository": "git@github.com:JiaboHou/express-knex-trx.git",
+  "author": "Jiabo Hou <jiabo.hou@outlook.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  }
+}
