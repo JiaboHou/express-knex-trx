@@ -1,5 +1,11 @@
+const yo = require('../src').default;
+
 describe('test test', () => {
-  it('always passes', () => {
-    expect(4).toBe(4);
+  it('returns "hi"', () => {
+    expect(yo(true)).toEqual('hi');
+  });
+
+  it('return "bye"', () => {
+    expect(yo(false)).toEqual('bye');
   });
 });

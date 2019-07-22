@@ -8,7 +8,11 @@
   "author": "Jiabo Hou <jiabo.hou@outlook.com>",
   "license": "MIT",
   "private": false,
-  "keywords": ["express", "knex", "transaction"],
+  "keywords": [
+    "express",
+    "knex",
+    "transaction"
+  ],
   "engines": {
     "node": "^8.16.0 || ^10.16.0"
   },
@@ -28,6 +32,7 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
+    "@types/jest": "^24.0.15",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "eslint": "^5.16.0",
@@ -39,6 +44,7 @@
     "eslint-plugin-security": "^1.4.0",
     "jest": "^24.8.0",
     "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   },
   "peerDependencies": {
