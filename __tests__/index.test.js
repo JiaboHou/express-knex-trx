@@ -1,4 +1,3 @@
-const httpMocks = require('node-mocks-http');
 const knex = require('knex');
 const mockKnex = require('mock-knex');
 
@@ -276,26 +275,17 @@ describe('src/index', () => {
       });
     });
 
-    it('adds 3 middlewares in addition to 1 user-specified middlewares', () => {
-      const middlewares = () => { return; };
+    it.each([
+      ['1 user-specified middleware', () => {}, 4],
+      ['an array of 1 user-specified middleware', [() => {}], 4],
+      ['an array of 3 user-specified middlewares', [() => {}, () => {}, () => {}], 6],
+    ])('adds 3 middlewares in addition to %s', (label, middlewares, expectedCount) => {
       const middlewaresWithKnexTrx = ekt.withKnexTrx(knexClient, middlewares);
-      expect(middlewaresWithKnexTrx.length).toEqual(4);
-    });
-
-    it('adds 3 middlewares in addition to an array of 1 user-specified middlewares', () => {
-      const middlewares = [() => { return; }];
-      const middlewaresWithKnexTrx = ekt.withKnexTrx(knexClient, middlewares);
-      expect(middlewaresWithKnexTrx.length).toEqual(4);
-    });
-
-    it('adds 3 middlewares in addition to an array of 3 user-specified middlewares', () => {
-      const middlewares = [() => { return; }, () => { return; }, () => { return; }];
-      const middlewaresWithKnexTrx = ekt.withKnexTrx(knexClient, middlewares);
-      expect(middlewaresWithKnexTrx.length).toEqual(6);
+      expect(middlewaresWithKnexTrx.length).toEqual(expectedCount);
     });
 
     it('maintains ordering of the middlewares', () => {
-      const middlewares = [() => { return; }, () => { return; }, () => { return; }];
+      const middlewares = [() => {}, () => {}, () => {}];
       const middlewaresWithKnexTrx = ekt.withKnexTrx(knexClient, middlewares);
       expect(middlewaresWithKnexTrx[1]).toBe(middlewares[0]);
       expect(middlewaresWithKnexTrx[2]).toBe(middlewares[1]);

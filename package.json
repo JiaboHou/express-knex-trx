@@ -22,7 +22,7 @@
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"__tests__/**/*.js\"",
-    "lint": "eslint \"{src,test}/**/*\" --ext .ts.js",
+    "lint": "eslint \"{src,__tests__}/**/*\" --ext .ts.js",
     "lint:fix": "yarn lint --fix",
     "prepare": "yarn build",
     "prepublishOnly": "yarn test && yarn lint",
@@ -47,7 +47,6 @@
     "jest": "^24.8.0",
     "knex": "^0.19.0",
     "mock-knex": "^0.4.6",
-    "node-mocks-http": "^1.7.6",
     "prettier": "^1.18.2",
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"

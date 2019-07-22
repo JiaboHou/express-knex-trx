@@ -28,4 +28,14 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
   },
+
+  overrides: [
+    {
+      files: ['__tests__/*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+        'node/no-missing-require': 'off',
+      },
+    },
+  ],
 };
