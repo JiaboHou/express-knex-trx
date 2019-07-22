@@ -6,9 +6,6 @@ module.exports = {
   },
 
   extends: [
-    'airbnb-base',
-    'plugin:import/errors',
-    'plugin:import/warnings',
     'plugin:node/recommended',
     'plugin:security/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -20,14 +17,6 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-  },
-
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.ts'],
-      },
-    },
   },
 
   rules: {
