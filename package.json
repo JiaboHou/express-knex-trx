@@ -1,6 +1,6 @@
 {
   "name": "express-knex-trx",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Wrap express middlewares in a knex transaction.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
