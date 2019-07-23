@@ -61,7 +61,10 @@ export const knexTrxErrorHandler: ErrorRequestHandler = async (err, req, res, ne
   next(err);
 };
 
-export const withKnexTrx = (knex: Knex, middlewares: RequestHandlerParams): RequestHandlerParams => {
+export const withKnexTrx = (
+  knex: Knex,
+  middlewares: RequestHandlerParams,
+): (RequestHandler | ErrorRequestHandler)[] => {
   checkKnex(knex);
   checkMiddlewares(middlewares);
 
