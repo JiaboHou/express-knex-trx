@@ -4,7 +4,7 @@
   "description": "Wrap express middlewares in a knex transaction.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:JiaboHou/express-knex-trx.git",
+  "repository": "github:JiaboHou/express-knex-trx",
   "author": "Jiabo Hou <jiabo.hou@outlook.com>",
   "license": "MIT",
   "private": false,
