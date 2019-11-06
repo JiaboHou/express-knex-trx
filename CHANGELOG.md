@@ -1,3 +1,10 @@
+# v0.2.2
+
+### Changes
+
+- [`062b6be`]: Remove eslint peer dependency
+- [`5d5ab23`]: Bump knex from 0.19.0 to 0.19.5 (#3)
+
 # v0.2.1
 
 ### Added
