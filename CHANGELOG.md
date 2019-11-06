@@ -2,8 +2,8 @@
 
 ### Changes
 
-- [`062b6be`]: Remove eslint peer dependency
-- [`5d5ab23`]: Bump knex from 0.19.0 to 0.19.5 (#3)
+- [`062b6be`](https://github.com/JiaboHou/express-knex-trx/commit/062b6be795e0469a7577100dc9de87d2706ee369): Remove eslint peer dependency
+- [`5d5ab23`](https://github.com/JiaboHou/express-knex-trx/commit/5d5ab233be43d1b8ba3502a091b7683a89d60f6a): Bump knex from 0.19.0 to 0.19.5 (#3)
 
 # v0.2.1
 
